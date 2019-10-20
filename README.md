@@ -1,6 +1,8 @@
 **Learnig to use brain.js**
 
 **GAME**
+
+<code>
 const board = [
     {'A1': '0', 'B1': '0', 'C1': 'x'},
     {'A2': '0', 'B2': 'x', 'C2': '0'},
@@ -21,9 +23,11 @@ function printBoard()
 }
 
 printBoard();
+</code>
 
 **AI**
 
+<code>
 const testData = [
     {input: {b1 : 1}, output: {a1 : 1}},
     {input: {c1 : 0, b1 : 0, a1: 1}, output: {b2 : 1}},
@@ -35,3 +39,4 @@ results = aiGameObject.net.run({c3 : 1});
 
 // Output
 aiGameObject.brain.likely(results, aiGameObject.net);
+</code>
