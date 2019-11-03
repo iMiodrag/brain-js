@@ -17,7 +17,7 @@ module.exports = class AiGame {
     }
 
     train(data) {
-        this.net.train(data);
+        return this.net.train(data);
     }
     
     saveFile(data) {
